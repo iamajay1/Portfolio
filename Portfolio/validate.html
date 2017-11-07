@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function validate(){
+		var a=document.forms["myForm"]["u"].value;
+    var b=document.forms["myForm"]["l"].value;
+	if(a==""||a==null||b==null||b=""){
+		alert("empty");
+	}
+	else
+	{
+		alert("success");
+	}
+
+		}
+	</script>
+</head>
+<body>
+<form name="myForm" onsubmit="validate()">
+username:<input type="text" name="u"><br>
+lastname:<input type="text" name="l"><br>
+<input type="submit" name="s" value="Submit">
+</form>
+</body>
+</html>
